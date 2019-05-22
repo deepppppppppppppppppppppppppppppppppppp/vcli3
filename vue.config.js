@@ -27,6 +27,15 @@ module.exports = {
       warnings: true,
       errors: true
     }
+    // proxy: [
+    //   {
+    //     context: '/login',
+    //     target: 'http://www.domain2.com:8080', // 代理跨域目标接口
+    //     changeOrigin: true,
+    //     secure: false, // 当代理某些https服务报错时用
+    //     cookieDomainRewrite: 'www.domain1.com' // 可以为false，表示不修改
+    //   }
+    // ]
   },
   configureWebpack: {
     // 覆盖webpack默认配置的都在这里
